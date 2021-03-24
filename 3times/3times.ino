@@ -5,6 +5,7 @@ int analogPin=A0;
 int analogPinTwo=A1;
 
 void setup() {
+  
   // put your setup code here, to run once:
 Serial.begin(9600);
 pinMode(ledPin,OUTPUT);
@@ -40,7 +41,7 @@ blinkLED(ledPin,T,blinkNTimes);
   }
   else{
 //    Serial.println("dones't works");
-digitalWrite(ledPin,LOW);
+digitalWrite(ledPin,LOW); 
 digitalWrite(test,HIGH);
  }
 //the potentiometer
